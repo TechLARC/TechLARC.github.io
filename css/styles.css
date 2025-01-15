@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
@@ -61,6 +60,36 @@ header img {
     font-weight: bold;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 9); /* Sombra para mejorar la legibilidad */
     z-index: 2; /* Trae el texto al frente */
+}
+
+/* Estilo para la información */
+.hero-info {
+    position: absolute;
+    top: 10px; /* Distancia desde la parte superior */
+    left: 10px; /* Distancia desde la parte derecha */
+    text-align: left;
+    color: white; /* Cambia el color si el fondo lo requiere */
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+/* Estilo para el enlace */
+.hero-info a {
+    text-decoration: none;
+    color: white; /* Asegura que el texto sea visible */
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espaciado entre ícono y texto */
+    font-size: 14px;
+}
+
+/* Estilo para el ícono de WhatsApp */
+.hero-info i {
+    font-size: 16px; /* Tamaño del ícono */
+    color: #25D366; /* Color oficial de WhatsApp */
 }
 
 .menu {
@@ -285,11 +314,39 @@ ul li {
     color: #333;
 }
 
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px; /* Ajusta la posición desde abajo */
+    right: 20px; /* Ajusta la posición desde la izquierda */
+    background-color: #25D366;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #20B354;
+}
+
+.whatsapp-float i {
+    color: white;
+    font-size: 30px;
+}
+
 footer {
     text-align: center;
     padding: 10px;
     background-color: #0073e6;
     color: #fff;
+
 }
 
 /* Adaptar el tamaño de la fuente en dispositivos pequeños */
