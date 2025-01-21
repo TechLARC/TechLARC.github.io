@@ -62,6 +62,12 @@ header img {
     z-index: 2; /* Trae el texto al frente */
 }
 
+/* Estilo para el contenido del banner */
+.banner-content h1{
+    color: white; /* Color del texto */
+    font-size: 3rem; /* Tamaño del texto */
+}
+
 /* Estilo para la información */
 .hero-info {
     position: absolute;
