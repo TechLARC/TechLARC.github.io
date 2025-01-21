@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
@@ -364,6 +365,12 @@ footer {
     .banner-content {
         font-size: 1.2rem;
     }
+
+    /* Estilo para el contenido del banner */
+    .banner-content h1{
+    color: white; /* Color del texto */
+    font-size: 1.5rem; /* Tamaño del texto */
+}
 
     .section-title {
         font-size: 2rem;
