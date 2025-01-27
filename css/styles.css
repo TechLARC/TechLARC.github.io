@@ -336,6 +336,23 @@ ul li {
     color: #333;
 }
 
+/* Justificar los párrafos a la izquierda solo dentro del div con id "terms" */
+#terms p {
+    text-align: left;
+}
+
+/* Cambiar las viñetas a círculos solo dentro del div con id "terms" */
+#terms ul {
+    list-style-type: circle;
+    padding-left: 20px; /* Espacio a la izquierda para las viñetas */
+    text-align: left;
+}
+
+#terms h2 {
+
+    text-align: left;
+}
+
 .whatsapp-float {
     position: fixed;
     bottom: 20px; /* Ajusta la posición desde abajo */
@@ -363,18 +380,45 @@ ul li {
     font-size: 30px;
 }
 
+/* Estilos del footer */
 footer {
+    position: relative;
+    width: 100%;
+    background: #0073e6;
+    color: white;
     text-align: center;
-    padding: 10px;
-    background-color: #0073e6;
-    color: #fff;
+    padding: 15px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
 
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #4a90e2;
+    text-decoration: underline;
+}
+
+/* Estilos para los enlaces del footer */
+.footer-links {
+    margin-top: 10px; /* Espaciado con respecto al texto de los derechos reservados */
+}
+
+.footer-links a {
+    margin: 0 15px; /* Espaciado horizontal entre los enlaces */
+    display: inline-block; /* Asegura que estén en línea */
 }
 
 /* Adaptar el tamaño de la fuente en dispositivos pequeños */
 @media (max-width: 768px) {
     .banner {
-    height: 350px; /* Altura del banner */
+    height: 200px; /* Altura del banner */
 }
 
     .banner-content {
@@ -384,7 +428,7 @@ footer {
     /* Estilo para el contenido del banner */
     .banner-content h1{
     color: white; /* Color del texto */
-    font-size: 1.5rem; /* Tamaño del texto */
+    font-size: 1rem; /* Tamaño del texto */
 }
 
     .section-title {
@@ -426,4 +470,25 @@ footer {
     flex-direction: column;
     gap: 10px;
   }
+
+  /* Estilo para la información */
+.hero-info {
+
+    top: 5px; /* Distancia desde la parte superior */
+    left: 5px; /* Distancia desde la parte derecha */
+    font-size: 12px;
+}
+
+/* Estilo para el enlace */
+.hero-info a {
+    gap: 5px; /* Espaciado entre ícono y texto */
+    font-size: 12px;
+}
+
+/* Estilo para el ícono de WhatsApp */
+.hero-info i {
+    font-size: 14px; /* Tamaño del ícono */
+    color: #25D366; /* Color oficial de WhatsApp */
+}
+
 }
