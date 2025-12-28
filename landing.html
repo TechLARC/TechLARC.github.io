@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechLARC – Landing Pages</title>
+  <link rel="stylesheet" href="css/landing.css">
+  <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+
+<!-- LANGUAGE SWITCH -->
+<div class="lang-switcher" style="text-align:right; padding:12px;">
+  <button onclick="setLang('es')">ES</button>
+  <button onclick="setLang('en')">EN</button>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-content">
+    <h1 data-key="hero_title"></h1>
+    <p data-key="hero_subtitle"></p>
+    <button class="btn" onclick="openWhatsApp()" data-key="hero_btn"></button>
+  </div>
+</section>
+
+<!-- FOR WHO -->
+<section class="section light">
+  <div class="container">
+    <h2 data-key="for_title"></h2>
+    <ul>
+      <li data-key="for_1"></li>
+      <li data-key="for_2"></li>
+      <li data-key="for_3"></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+  <div class="container">
+    <h2 data-key="about_title"></h2>
+    <p data-key="about_text"></p>
+  </div>
+</section>
+
+<!-- METHOD -->
+<section class="section light">
+  <div class="container">
+    <h2 data-key="method_title"></h2>
+    <ul>
+      <li data-key="method_1"></li>
+      <li data-key="method_2"></li>
+      <li data-key="method_3"></li>
+      <li data-key="method_4"></li>
+      <li data-key="method_5"></li>
+    </ul>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section">
+  <div class="container">
+    <h2 data-key="pricing_title"></h2>
+    <p data-key="pricing_text"></p>
+    <ul>
+      <li data-key="pricing_1"></li>
+      <li data-key="pricing_2"></li>
+      <li data-key="pricing_3"></li>
+    </ul>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container">
+    <h2 data-key="cta_title"></h2>
+    <p data-key="cta_subtitle"></p>
+    <button class="btn" id="ctaBtn" onclick="openWhatsApp()"></button>
+  </div>
+</section>
+
+<script src="js/landing.js"></script>
+</body>
+</html>
