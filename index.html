@@ -1,348 +1,364 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5KP57CXP');</script>
-<!-- End Google Tag Manager -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TechLARC - Ofrecemos diseño y desarrollo de páginas web personalizadas para empresas, autónomos y emprendedores. ¡Contáctanos hoy y lleva tu negocio al siguiente nivel!">
-    <meta name="keywords" content="Diseño web, Creación de sitios web, Optimización SEO, Hosting web, TechLARC">
-    <meta http-equiv="Content-Language" content="es">
-    <meta name="language" content="es-CO">
-    <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="TechLARC | Diseño Web Profesional">
-    <meta property="og:description" content="Diseñamos sitios web personalizados y optimizados para SEO. Explora nuestras soluciones rápidas y efectivas.">
-    <meta property="og:url" content="https://techlarc.github.io/">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="es_CO">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="TechLARC | Diseño Web Profesional">
-    <meta name="twitter:description" content="Tu página web ideal, lista en pocos días. Personalización y SEO garantizados.">
-    <meta name="twitter:image" content="https://techlarc.github.io/img/Milogo.jpeg">
-    <meta http-equiv="Expires" content="0">
-	<meta http-equiv="Last-Modified" content="0"> 
-	<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
-	<meta http-equiv="Pragma" content="no-cache">
-
-    <title>TechLARC | Diseño Web Profesional y Optimización SEO</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="img/Milogo.jpeg" type="image/png">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechLARC | Professional Web Design</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="img/Milogo.jpeg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QL9K11F56Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-QL9K11F56Y');
-</script>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KP57CXP"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+
 <header class="wrap">
-    <div id="banner" class="banner">
+  <div class="lang-switch">
+    <button onclick="setLanguage('es')">ES</button>
+    <button onclick="setLanguage('en')">EN</button>
+  </div>
 
-     <video autoplay muted loop class="banner-video">
-        <source src="videos/banner-video.mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de videos.
+  <div id="banner" class="banner">
+    <video autoplay muted loop class="banner-video">
+      <source src="videos/banner-video.mp4" type="video/mp4">
     </video>
-        <div class="banner-content">
-            <h1>Tu negocio, nuestra pasión digital</h1>
-        </div>
-        <div class="hero-info">
-            <p>Bogotá - Colombia</p>
-            <a href="https://wa.me/573504799933" target="_blank">
-            <i class="fab fa-whatsapp"></i> 3504799933
-            </a>
-        </div>
+    <div class="banner-content">
+      <h1 data-key="hero_title">Tu negocio, nuestra pasión digital</h1>
     </div>
-    <div class="menu">
-
-        <div class="menu">
-
-
-        <ul>
-            <li><a href="#descripcion">Descripción</a></li>
-            <li><a href="#valor">Propuesta de Valor</a></li>
-            <li><a href="#hosting">Hosting</a></li>
-            <li><a href="#portafolio">Portafolio</a></li>
-            <li><a href="#tarifas">Tarifas y Planes</a></li>
-            <li><a href="#garantia">Garantia</a></li>
-            <li><a href="#redes">Redes Sociales</a></li>
-        </ul>
-        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="hero-info">
+      <p data-key="hero_location">Bogotá - Colombia</p>
+      <a href="https://wa.me/573118999691" target="_blank">
+        <i class="fab fa-whatsapp"></i> 3118999691
+      </a>
     </div>
+  </div>
+
+  <div class="menu">
+    <ul>
+      <li><a href="#descripcion" data-key="menu_description">Descripción</a></li>
+      <li><a href="#hosting" data-key="menu_hosting">Hosting</a></li>
+      <li><a href="#tarifas" data-key="menu_prices">Tarifas</a></li>
+      <li><a href="#garantia" data-key="menu_guarantee">Garantía</a></li>
+      <li><a href="#redes" data-key="menu_social">Redes</a></li>
+    </ul>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
 </header>
 
 <section>
 <div id="descripcion" class="wrap">
   <div class="columns">
     <div class="column">
-      
-      <h2>Descripción del Servicio</h2>
-      <p>Ofrezco el diseño y desarrollo de páginas web estáticas rápidas, funcionales y estéticamente atractivas. Estas páginas están optimizadas para dispositivos móviles y diseñadas para destacar tu negocio o proyecto en línea.</p>
-      <img src="img/Descripcion.jpeg" loading="lazy" alt="Descripción 1" class="hover-effect">
-    </div>
-   
-    <div id="valor" class="column">
-      <img src="img/propuestaValor.jpeg" loading="lazy" alt="Descripción 2" class="hover-effect">
-      <h2>Propuesta de Valor</h2>
-      <p><ul>
-        <li><strong>Diseño personalizado:</strong> Adaptado a tu estilo y necesidades.</li>
-        <li><strong>Rápida entrega:</strong> Sitios listos en 3 a 5 días hábiles.</li>
-        <li><strong>Optimización básica para SEO:</strong> Mejora tu visibilidad en buscadores.</li>
-        <li><strong>Soporte técnico inicial:</strong> Me encargo de subir tu página al hosting y asegurar que todo funcione correctamente.</li>
-    </ul></p>
-    </div>
+
+  <h2 data-key="service_title">Descripción del Servicio</h2>
+  <p data-key="service_desc">
+    Ofrezco el diseño y desarrollo de páginas web estáticas rápidas, funcionales y estéticamente atractivas. Estas páginas están optimizadas para dispositivos móviles y diseñadas para destacar tu negocio o proyecto en línea.
+  </p>
+  <img src="img/Descripcion.jpeg" loading="lazy" alt="Descripción 1" class="hover-effect">
   </div>
+  
+<div id="valor" class="column">
+  <img src="img/propuestaValor.jpeg" loading="lazy" alt="Value Proposition" class="hover-effect">
+  <h2 data-key="value_title">Propuesta de Valor</h2>
+  <p><ul>
+    <li><strong data-key="value_item1_title">Diseño personalizado:</strong>
+        <span data-key="value_item1_desc">Adaptado a tu estilo y necesidades.</span>
+    </li>
+    <li><strong data-key="value_item2_title">Rápida entrega:</strong>
+        <span data-key="value_item2_desc">Sitios listos en 3 a 5 días hábiles.</span>
+    </li>
+    <li><strong data-key="value_item3_title">Optimización básica para SEO:</strong>
+        <span data-key="value_item3_desc">Mejora tu visibilidad en buscadores.</span>
+    </li>
+    <li><strong data-key="value_item4_title">Soporte técnico inicial:</strong>
+        <span data-key="value_item4_desc">Me encargo de subir tu página al hosting y asegurar que todo funcione correctamente.</span>
+    </li>
+  </ul></p>
+</div>
+</div>
 </div>
         <!-- Enlace de "Volver al inicio" -->
     <a href="#banner" class="volver-inicio">Volver al inicio</a>
 </section>
 
 <section id="hosting" class="wrap">
-    <h2>Opciones de Hosting</h2>
-    <div class="image-placeholder">
-    	<img src="img/Hosting.jpeg" loading="lazy" alt="Hosting" class="image">
-    </div>
-    <p>Tú contratas el hosting</p>
-    <ul>
-        <li> Te asesoraré para elegir el mejor proveedor según tus necesidades y presupuesto.</li>
-		<li> Una vez contratado, subiré tu página al hosting sin costo adicional.</li>
+  <h2 data-key="hosting_title">Opciones de Hosting</h2>
 
-    </ul>
-            <!-- Enlace de "Volver al inicio" -->
-    <a href="#banner" class="volver-inicio">Volver al inicio</a>
+  <div class="image-placeholder">
+    <img src="img/Hosting.jpeg" loading="lazy" alt="Hosting" class="image">
+  </div>
+
+  <p data-key="hosting_subtitle">Tú contratas el hosting</p>
+
+  <ul>
+    <li data-key="hosting_item1">
+      Te asesoraré para elegir el mejor proveedor según tus necesidades y presupuesto.
+    </li>
+    <li data-key="hosting_item2">
+      Una vez contratado, subiré tu página al hosting sin costo adicional.
+    </li>
+  </ul>
+
+  <a href="#banner" class="volver-inicio" data-key="back_to_top">Volver al inicio</a>
 </section>
 
 <div id="portafolio" class="wrap">
-    <section id="portfolio" class="portfolio-section">
-        <h2 class="section-title">Mi Portafolio</h2>
-        <div class="portfolio-container">
-            <div class="portfolio-item">
-                <img src="img/Alquimia del Corazón.png" loading="lazy" alt="Proyecto 1">
-                <div class="portfolio-info">
-                    <h3>Proyecto 1: Alquimia del Corazón</h3>
-                    <p>Este proyecto es una plataforma interactiva dedicada a la espiritualidad y el crecimiento personal. Ofrecí una solución web que refleja la esencia del contenido de Alquimia del Corazón, creando un diseño armonioso y accesible para que los usuarios puedan explorar diversos recursos de desarrollo personal. La web está optimizada para una navegación intuitiva, con un enfoque en la simplicidad y la conexión emocional.</p>
-                    <p>
+  <section id="portfolio" class="portfolio-section">
+    <h2 class="section-title" data-key="portfolio_title">Mi Portafolio</h2>
 
-                        <ul>
-        					<li><strong>Soluciones ofrecidas:</strong></li>
-            					<ul>
-                					<li>Diseño personalizado y responsivo.</li>
-                					<li>Optimización de la experiencia de usuario.</li>
-                					<li>Creación de una interfaz amigable para navegar por contenido relacionado con la espiritualidad.</li>
-            					</ul>
-        					</li>
-    					</ul>
-                    </p>
-                    <a href="https://alquimiadelcorazon.github.io/" target="_blank" class="portfolio-link">Ver Proyecto</a>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img src="img/logo.jpeg" loading="lazy" alt="Proyecto 2">
-                <div class="portfolio-info">
-                    <h3>Proyecto 2: Lumus Ediciones</h3>
-                    <p>Lumus Ediciones es un proyecto que proporciona servicios editoriales a escritores y autores. Desarrollé una página web moderna que facilita la presentación de sus servicios, incluyendo la autopublicación y la edición de libros. La plataforma está pensada para ofrecer a los usuarios una navegación clara, destacando los servicios y proyectos de la editorial.</p>
-                    <p>
+    <div class="portfolio-container">
 
-                        <ul>
-        					<li><strong>Soluciones ofrecidas:</strong></li>
-            					<ul>
-                					<li>Creación de un diseño visualmente atractivo y profesional.</li>
-                					<li>Desarrollo de un sistema de navegación intuitivo.</li>
-                					<li>Optimización para dispositivos móviles.</li>
-            					</ul>
-        					</li>
-    					</ul>
-                    </p>                    
-                    <a href="https://lumusediciones.github.io/" target="_blank" class="portfolio-link">Ver Proyecto</a>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img src="img/Libropaper.jpg" loading="lazy" alt="Proyecto 3">
-                <div class="portfolio-info">
-                    <h3>Proyecto 3: LabInnov Create</h3>
-                    <p>LabInnov Create es una plataforma empresarial dedicada a la innovación y la creación de soluciones tecnológicas. A través de este proyecto, diseñé una página web interactiva que permite presentar los servicios y productos de manera clara y atractiva, con un enfoque en la accesibilidad y el diseño limpio. El objetivo fue ofrecer una solución que resalte la innovación de LabInnov y proporcione una experiencia de usuario fluida.</p>
-                    <p>
+      <!-- PROYECTO 1 -->
+      <div class="portfolio-item">
+        <img src="img/Alquimia del Corazón.png" loading="lazy" alt="Project 1">
+        <div class="portfolio-info">
+          <h3 data-key="p1_title">Proyecto 1: Alquimia del Corazón</h3>
+          <p data-key="p1_desc">
+            Este proyecto es una plataforma interactiva dedicada a la espiritualidad y el crecimiento personal...
+          </p>
 
-                        <ul>
-        					<li><strong>Soluciones ofrecidas:</strong></li>
-            					<ul>
-                					<li>Diseño web dinámico y atractivo.</li>
-                					<li>Estructuración clara de servicios y productos.</li>
-                					<li>Optimización para facilitar la navegación y la conversión de usuarios.</li>
-            					</ul>
-        					</li>
-    					</ul>
-                    </p> 
-                    <a href="https://www.labinnovcreate.com.co/" target="_blank" class="portfolio-link">Ver Proyecto</a>
-                </div>
-            </div>
-            <!-- Agrega más proyectos según sea necesario -->
+          <ul>
+            <li><strong data-key="solutions_title">Soluciones ofrecidas:</strong></li>
+            <ul>
+              <li data-key="p1_sol1">Diseño personalizado y responsivo.</li>
+              <li data-key="p1_sol2">Optimización de la experiencia de usuario.</li>
+              <li data-key="p1_sol3">Interfaz amigable para explorar contenido espiritual.</li>
+            </ul>
+          </ul>
+
+          <a href="https://alquimiadelcorazon.github.io/" target="_blank" class="portfolio-link" data-key="view_project">Ver Proyecto</a>
         </div>
-                <!-- Enlace de "Volver al inicio" -->
-    <a href="#banner" class="volver-inicio">Volver al inicio</a>
-    </section>
+      </div>
+
+      <!-- PROYECTO 2 -->
+      <div class="portfolio-item">
+        <img src="img/logo.png" loading="lazy" alt="Project 2">
+        <div class="portfolio-info">
+          <h3 data-key="p2_title">Proyecto 2: Lumus Ediciones</h3>
+          <p data-key="p2_desc">
+            Lumus Ediciones es un proyecto que proporciona servicios editoriales a escritores y autores...
+          </p>
+
+          <ul>
+            <li><strong data-key="solutions_title">Soluciones ofrecidas:</strong></li>
+            <ul>
+              <li data-key="p2_sol1">Diseño visualmente atractivo y profesional.</li>
+              <li data-key="p2_sol2">Sistema de navegación intuitivo.</li>
+              <li data-key="p2_sol3">Optimización para dispositivos móviles.</li>
+            </ul>
+          </ul>
+
+          <a href="https://lumusediciones.github.io/" target="_blank" class="portfolio-link" data-key="view_project">Ver Proyecto</a>
+        </div>
+      </div>
+
+      <!-- PROYECTO 3 -->
+      <div class="portfolio-item">
+        <img src="img/Libropaper.jpg" loading="lazy" alt="Project 3">
+        <div class="portfolio-info">
+          <h3 data-key="p3_title">Proyecto 3: LabInnov Create</h3>
+          <p data-key="p3_desc">
+            LabInnov Create es una plataforma dedicada a la innovación tecnológica...
+          </p>
+
+          <ul>
+            <li><strong data-key="solutions_title">Soluciones ofrecidas:</strong></li>
+            <ul>
+              <li data-key="p3_sol1">Diseño web dinámico y atractivo.</li>
+              <li data-key="p3_sol2">Estructuración clara de servicios y productos.</li>
+              <li data-key="p3_sol3">Optimización para mejorar la conversión.</li>
+            </ul>
+          </ul>
+
+          <a href="https://www.labinnovcreate.com.co/" target="_blank" class="portfolio-link" data-key="view_project">Ver Proyecto</a>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="#banner" class="volver-inicio" data-key="back_to_top">Volver al inicio</a>
+  </section>
 </div>
 
 <section id="tarifas" class="wrap">
-<div class="wrap">
   <div class="columns">
     <div class="column">
-      <h2>Tarifas</h2>
-    <p>Ofrezco precios competitivos adaptados a diferentes necesidades:</p>
-    <ul>
-        <li><strong>Página básica (One-Page):</strong> $150,000 - $300,000 COP <br>Debe proporcionar el material gráfico <br>(Banner, fotos, imagenes, videos, logos, etc.)</li>
-        <li><strong>Página con varias secciones:</strong> $400,000 - $600,000 COP</li>
-        <li><strong>Adicionales opcionales:</strong>
-            <ul>
-                <li>SEO avanzado: $100,000 COP</li>
-                <li>Diseño gráfico personalizado (logotipos, banners): $150,000 COP</li>
-                <li>Integración redes sociales: $50,000 COP</li>
-            </ul>
-        </li>
-    </ul>
-    </div>
-    <div class="column">
-      <img src="img/money.jpeg" loading="lazy" alt="Descripción 2" class="hover-effect">
+      <h2 data-key="rates_title">Tarifas</h2>
+      <p data-key="rates_intro">Ofrezco precios competitivos adaptados a diferentes necesidades:</p>
 
+      <ul>
+        <li>
+          <strong data-key="rate_basic_title">Página básica (One-Page):</strong>
+          <span data-key="rate_basic_price">$150,000 - $300,000 COP</span><br>
+          <span data-key="rate_basic_note">
+            Debe proporcionar el material gráfico (Banner, fotos, imágenes, videos, logos, etc.)
+          </span>
+        </li>
+
+        <li>
+          <strong data-key="rate_multi_title">Página con varias secciones:</strong>
+          <span data-key="rate_multi_price">$400,000 - $600,000 COP</span>
+        </li>
+
+        <li>
+          <strong data-key="rate_extras_title">Adicionales opcionales:</strong>
+          <ul>
+            <li data-key="rate_extra_seo">SEO avanzado: $100,000 COP</li>
+            <li data-key="rate_extra_design">Diseño gráfico personalizado (logotipos, banners): $150,000 COP</li>
+            <li data-key="rate_extra_social">Integración redes sociales: $50,000 COP</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <img src="img/money.jpeg" loading="lazy" alt="Tarifas" class="hover-effect">
     </div>
   </div>
-</div>    
-        <!-- Enlace de "Volver al inicio" -->
-    <a href="#banner" class="volver-inicio">Volver al inicio</a>
+
+  <a href="#banner" class="volver-inicio" data-key="back_home">Volver al inicio</a>
 </section>
+
 
 <section id="planes" class="wrap">
 <section class="pricing-section">
-    <h2 class="section-title">Nuestros Planes</h2>
-    <div class="pricing-container">
-        <div class="pricing-card">
-            <h3>Básico</h3>
-            <p>Para quienes necesitan una presencia web sencilla y funcional.</p>
-            <p class="price">$150,000 COP</p>
-            <ul> Incluye:
-                <li>✔ Banner inicial (sin diseño gráfico personalizado).</li>
-                <li>✔ Menú de navegación.s</li>
-                <li>✔ 3 secciones para descripción de productos o servicios</li>
-                <li>✔ Footer con copyright, términos y condiciones.</li>
-                <li>✔ Botón de WhatsApp flotante.</li>
-                <li>✔ Diseño responsive (se adapta a móviles y tabletas).</li>
-                <li>✔ SEO básico para mejorar la visibilidad en buscadores.</li>
-            </ul>
-            <ul> No incluye:
-                <li>✖ Hosting ni dominio (el cliente debe adquirirlos por su cuenta).</li>
-                <li>✖ Diseño gráfico (el cliente debe proporcionar imágenes y textos).</li>
-            </ul>
-            <button class="whatsapp-btn" data-plan="Plan Básico">Elegir Plan</button>
-        </div>
-        <div class="pricing-card popular">
-            <h3>Intermedio</h3>
-            <p>Para negocios que buscan una web optimizada con mejor visibilidad.</p>
-            <p class="price">$250,000 COP</p>
-            <ul>Incluye todo lo del Plan Básico, más:
-                <li>✔ Hasta 5 secciones personalizadas.</li>
-                <li>✔ SEO avanzado para mejorar el posicionamiento en buscadores.</li>
-                <li>✔ Integración con redes sociales (Facebook, Instagram, LinkedIn).</li>
-            </ul>
-            <ul> No incluye:
-                <li>✖ Hosting ni dominio (el cliente debe adquirirlos por su cuenta).</li>
-                <li>✖ Diseño gráfico (el cliente debe proporcionar imágenes y textos).</li>
-            </ul>
-        <button class="whatsapp-btn" data-plan="Plan Estándar">Elegir Plan</button>
-        </div>
-        <div class="pricing-card">
-            <h3>Premium</h3>
-            <p>Para marcas que buscan una web más completa y profesional.</p>
-            <p class="price">$400,000 COP</p>
-            <ul> Incluye todo lo del Plan Intermedio, más:
-                <li>✔ Enlaces a 2 páginas adicionales básicas (Ej.: Sobre Nosotros)</li>
-                <li>✔ Animaciones ligeras y efectos visuales.</li>
-                <li>✔ Blog básico con 3 entradas iniciales (No se podrá modificar a futuro; si se requieren cambios, tendrán costo adicional).</li>
-                <li>✔ SEO avanzado + integración con redes sociales.</li>
-                <li>✔ Diseño gráfico para el banner principal (basado en imágenes y estilo proporcionado por el cliente).</li>
-            </ul>
-            <ul> No incluye:
-                <li>✖ Hosting ni dominio (el cliente debe adquirirlos por su cuenta).</li>
-                <li>✖ Diseño gráfico (el cliente debe proporcionar imágenes y textos).</li>
-            </ul>            
-        <button class="whatsapp-btn" data-plan="Plan Premium">Elegir Plan</button>
-        </div>
-    </div>
-    <div class="notas-importantes">
-    <p>📌 <strong>Notas importantes:</strong></p>
-    <ul>
-        <li>Todos los planes son para páginas web estáticas, sin bases de datos ni funciones avanzadas.</li>
-        <li>Entrega en un máximo de 5 días hábiles (según la carga de trabajo y recepción del material).</li>
-        <li>Personalización adicional con costo extra.</li>
-        <li>La página se mostrará mediante un enlace en un servidor temporal para su aprobación. Una vez aprobada, se realizará el pago y luego se subirá al hosting proporcionado por el cliente.</li>
-        <li>Atendemos consultas y pedidos exclusivamente a través de WhatsApp. Si prefieres otro medio de comunicación, te invitamos a considerar otras opciones, ya que nuestro servicio está especialmente diseñado para este canal. ¡Gracias por entender!</li>
-    </ul>
-</div>
-</section>
-        <!-- Enlace de "Volver al inicio" -->
-    <a href="#banner" class="volver-inicio">Volver al inicio</a>
 
+  <h2 class="section-title" data-key="plans_title">Nuestros Planes</h2>
+
+  <div class="pricing-container">
+
+    <!-- PLAN BÁSICO -->
+    <div class="pricing-card">
+      <h3 data-key="basic_title">Básico</h3>
+      <p data-key="basic_desc">Para quienes necesitan una presencia web sencilla y funcional.</p>
+      <p class="price">$150,000 COP</p>
+
+      <ul>
+        <li><strong data-key="includes">Incluye:</strong></li>
+        <li data-key="basic_inc1">Banner inicial (sin diseño gráfico personalizado).</li>
+        <li data-key="basic_inc2">Menú de navegación.</li>
+        <li data-key="basic_inc3">3 secciones para productos o servicios.</li>
+        <li data-key="basic_inc4">Footer con copyright, términos y condiciones.</li>
+        <li data-key="basic_inc5">Botón flotante de WhatsApp.</li>
+        <li data-key="basic_inc6">Diseño responsive para móviles y tabletas.</li>
+        <li data-key="basic_inc7">SEO básico para mejorar visibilidad.</li>
+      </ul>
+
+      <ul>
+        <li><strong data-key="not_included">No incluye:</strong></li>
+        <li data-key="basic_no1">Hosting ni dominio.</li>
+        <li data-key="basic_no2">Diseño gráfico (imágenes y textos).</li>
+      </ul>
+
+      <button class="whatsapp-btn" data-plan="Plan Básico" data-key="btn_choose_plan">Elegir Plan</button>
+    </div>
+
+    <!-- PLAN INTERMEDIO -->
+    <div class="pricing-card popular">
+      <h3 data-key="standard_title">Intermedio</h3>
+      <p data-key="standard_desc">Para negocios que buscan una web optimizada con mejor visibilidad.</p>
+      <p class="price">$250,000 COP</p>
+
+      <ul>
+        <li><strong data-key="includes">Incluye:</strong></li>
+        <li data-key="standard_inc1">Hasta 5 secciones personalizadas.</li>
+        <li data-key="standard_inc2">SEO avanzado.</li>
+        <li data-key="standard_inc3">Integración con redes sociales.</li>
+      </ul>
+
+      <ul>
+        <li><strong data-key="not_included">No incluye:</strong></li>
+        <li data-key="standard_no1">Hosting ni dominio.</li>
+        <li data-key="standard_no2">Diseño gráfico (imágenes y textos).</li>
+      </ul>
+
+      <button class="whatsapp-btn" data-plan="Plan Estándar" data-key="btn_choose_plan">Elegir Plan</button>
+    </div>
+
+    <!-- PLAN PREMIUM -->
+    <div class="pricing-card">
+      <h3 data-key="premium_title">Premium</h3>
+      <p data-key="premium_desc">Para marcas que buscan una web más completa y profesional.</p>
+      <p class="price">$400,000 COP</p>
+
+      <ul>
+        <li><strong data-key="includes">Incluye:</strong></li>
+        <li data-key="premium_inc1">2 páginas adicionales (Ej: Sobre Nosotros).</li>
+        <li data-key="premium_inc2">Animaciones y efectos visuales.</li>
+        <li data-key="premium_inc3">Blog básico con 3 entradas iniciales.</li>
+        <li data-key="premium_inc4">SEO avanzado + redes sociales.</li>
+        <li data-key="premium_inc5">Diseño gráfico para banner principal.</li>
+      </ul>
+
+      <ul>
+        <li><strong data-key="not_included">No incluye:</strong></li>
+        <li data-key="premium_no1">Hosting ni dominio.</li>
+        <li data-key="premium_no2">Diseño gráfico adicional.</li>
+      </ul>
+
+      <button class="whatsapp-btn" data-plan="Plan Premium" data-key="btn_choose_plan">Elegir Plan</button>
+    </div>
+
+  </div>
+
+  <div class="notas-importantes">
+    <p>📌 <strong data-key="notes_title">Notas importantes:</strong></p>
+    <ul>
+      <li data-key="note1">Todos los planes son páginas web estáticas.</li>
+      <li data-key="note2">Entrega máxima en 5 días hábiles.</li>
+      <li data-key="note3">Personalizaciones adicionales tienen costo.</li>
+      <li data-key="note4">La web se entrega primero en servidor temporal para aprobación.</li>
+      <li data-key="note5">Atención y pedidos solo vía WhatsApp.</li>
+    </ul>
+  </div>
+
+</section>
+
+<a href="#banner" class="volver-inicio" data-key="back_to_top">Volver al inicio</a>
 </section>
 
 
 <section id="garantia" class="wrap">
-
-<div class="wrap">
-  <div class="columns">
-    <div class="column">
-      <h2>Garantia</h2>
-    <p>Ofrezco soporte técnico gratuito durante los primeros 7 días después de la entrega para resolver cualquier inconveniente técnico relacionado con la página.</p>
-    </div>
-    <div class="column">
-      <img src="img/garantia.jpeg" loading="lazy" alt="Descripción 2" class="hover-effect">
-
-    </div>
-  </div>
-</div> 
-        <!-- Enlace de "Volver al inicio" -->
-    <a href="#banner" class="volver-inicio">Volver al inicio</a>
+  <h2 data-key="guarantee_title">Garantía</h2>
+  <p data-key="guarantee_desc">
+    Soporte técnico gratuito durante los primeros 7 días.
+  </p>
 </section>
 
 <section id="redes" class="wrap">
-    <h2>Redes Sociales</h2>
-    <p>¡Síguenos para conocer más sobre nuestros proyectos!</p>
-    <div class="social-icons">
-    	<a href="https://github.com/liyi85" target="_blank" class="icono">
-        	<img src="img/github.png" alt="GitHub" class="icono-img"> <span>GitHub</span>
-    	</a>
-    	<a href="https://wa.me/573504799933" target="_blank" class="icono">
-        	<img src="img/WhatsappIcono.png" alt="WhatsApp" class="icono-img"> <span>WhatsApp</span>
-    	</a>
-    </div>
+  <h2 data-key="social_title">Redes Sociales</h2>
+  <p data-key="social_desc">¡Síguenos para conocer más sobre nuestros proyectos!</p>
 
+  <div class="social-icons">
+    <a href="https://github.com/liyi85" target="_blank" class="icono">
+      <img src="img/github.png" alt="GitHub" class="icono-img">
+      <span>GitHub</span>
+    </a>
+
+    <a href="https://wa.me/573504799933" target="_blank" class="icono">
+      <img src="img/WhatsappIcono.png" alt="WhatsApp" class="icono-img">
+      <span>WhatsApp</span>
+    </a>
+  </div>
 </section>
 
 <div class="whatsapp-float">
-    <a href="https://wa.me/573504799933" target="_blank" aria-label="Chat en WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+  <a href="#" id="whatsapp-float-btn" target="_blank" aria-label="Chat en WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 </div>
 
+
 <footer>
-    <p>&copy; 2025 - Ligia Andrea Rodriguez C. Todos los derechos reservados.</p>
-    <div class="footer-links">
-        <a href="terminos.html" target="_blank">Términos y Condiciones</a>
-        <a href="politicas.html" target="_blank">Políticas de Privacidad</a>
-    </div>
+  <p data-key="footer_rights">
+    &copy; 2025 - Ligia Andrea Rodriguez C. Todos los derechos reservados.
+  </p>
+
+  <div class="footer-links">
+    <a href="terminos.html" target="_blank" data-key="footer_terms">Términos y Condiciones</a>
+    <a href="politicas.html" target="_blank" data-key="footer_privacy">Políticas de Privacidad</a>
+  </div>
 </footer>
+
 
     <script>
         function toggleMenu() {
@@ -351,23 +367,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
     </script>
 
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const botones = document.querySelectorAll(".whatsapp-btn");
-
-        botones.forEach(boton => {
-            boton.addEventListener("click", function () {
-                let planSeleccionado = this.getAttribute("data-plan");
-                let numeroWhatsApp = "573504799933"; // Reemplaza con tu número de WhatsApp
-                let mensaje = `Hola, estoy interesado en el *${planSeleccionado}*. ¿Podrías darme más información?`;
-                let url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
-
-                window.open(url, "_blank");
-            });
-        });
-    });
-</script>
-
-
+<script src="js/lang.js"></script>
 </body>
 </html>
